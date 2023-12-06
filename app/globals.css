@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  font-family: 'Roboto', sans-serif;
+
+}
+.homePage{
+  background: url("/assets/bgimage2.jpg")no-repeat center center/cover;
+}
+.photographyServices{
+  background: url("/assets/bgimage2.jpg")no-repeat center center/cover;
+}
+.hireUs{
+  background: url("/assets/hireus.jpg")no-repeat center center/cover;
+}
+.contect-img{
+  background: url("/assets/bg.jpg")no-repeat center center/cover;
+}
+.login-img{
+  background: url("/assets/Loginimg.jpg")no-repeat center center/cover;
+}
+
+.signup-img{
+  background: url("/assets/signup.jpg")no-repeat center center/cover;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.camera {
+  width: 80px;
+  height: 60px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  position: relative;
+}
+
+.camera-lens {
+  width: 10px;
+  height: 10px;
+  background: #333;
+  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.camera-body {
+  width: 70px;
+  height: 50px;
+  background: #333;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.camera-strap {
+  width: 40px;
+  height: 4px;
+  background: #333;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.shutter {
+  width: 80px;
+  height: 4px;
+  background: #333;
+  margin-top: 10px;
+  animation: shutterAnimation 1s infinite;
+}
+
+@keyframes shutterAnimation {
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
