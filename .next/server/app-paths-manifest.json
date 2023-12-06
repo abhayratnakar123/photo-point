@@ -1,7 +1,0 @@
-{
-  "/page": "app/page.js",
-  "/components/Login/page": "app/components/Login/page.js",
-  "/api/routes/User/Login/route": "app/api/routes/User/Login/route.js",
-  "/components/Contact/page": "app/components/Contact/page.js",
-  "/api/routes/Email/Send/route": "app/api/routes/Email/Send/route.js"
-}
